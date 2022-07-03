@@ -1,0 +1,23 @@
+{
+    "name": "Weather app",
+    "description":"app which display weather",
+    "version":"0.0.1",
+    "manifest_version": 3,
+
+    "background": { 
+        "service_worker": "fetchData.js" 
+    },
+
+    "action":{  
+        "default_popup":"./popup.html",
+        "default_icon":"./icon_128.png"
+    },
+
+    "icons":{
+        "16":"./icon_16.png",
+        "48":"./icon_48.png",
+        "128":"./icon_128.png"
+    },
+
+    "permission":["activeTab", "geolocation"]
+}  

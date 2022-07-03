@@ -1,0 +1,136 @@
+body {
+  width: 400px;
+  height: 400px;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white !important;
+  border-radius: 20px;
+}
+
+p {
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  color: white !important;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.location {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 48px gray;
+  color: white !important;
+  font-weight: bold;
+  background-color: #ffffff36;
+}
+
+.location span {
+  font-size: 1.7em;
+  letter-spacing: 10px;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation-delay: 0.5s;
+  color: white !important;
+}
+
+.location sup {
+  color: white !important;
+  height: 1.2em;
+  padding: 0.2em 0.6em;
+  margin-left: 0.2em;
+  border-radius: 30px;
+  color: #ffff;
+  background: #00c3ff;
+}
+
+.temp {
+  display: flex;
+  flex-direction: row;
+  font-size: 3rem;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  margin-top: 10px;
+  animation-delay: 0.5s;
+  color: white !important;
+  text-align: center;
+}
+
+.temp_feel_like {
+  display: flex;
+  font-weight: bolder;
+  flex-direction: row;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation-delay: 0.5s;
+  font-size: 17px;
+  letter-spacing: 3px;
+  margin-top: -5px;
+  color: white !important;
+  text-align: center;
+}
+
+#text_location_country {
+  color: white;
+  font-size: 15px;
+  background-color: #6dcdfa4d;
+  position: fixed;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation-delay: 0.5s;
+  left: 287px;
+  top: 62px;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  letter-spacing: 2px;
+}
+#text_desc {
+  display: flex;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation-delay: 0.5s;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: white !important;
+  letter-spacing: 1px;
+}
+.c1 {
+  font-size: 6px;
+  color: white !important;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation-delay: 0.5s;
+}
+.c2 {
+  font-size: 8px;
+  color: white !important;
+}
+#icon {
+  animation: zoom-in-zoom-out 3s ease infinite;
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
