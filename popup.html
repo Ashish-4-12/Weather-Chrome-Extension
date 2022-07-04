@@ -17,27 +17,53 @@
       href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Document</title>
   </head>
   <body>
+    <div class="coords">
+      <div id="lat"></div>
+      <div id="long"></div>
+    </div>
     <p class="location">
       <span id="demo"></span>
       <span id="text_location"></span>
       <span id="text_location_country"></span>
     </p>
 
-    <div class="temp">
-      <span id="text_temp"></span>
-      <span id="c1">°C</span>
-    </div>
+    <div class="temperatures">
+      <div class="temp">
+        <span id="text_temp"></span>
+        <span id="c1">°C</span>
+      </div>
 
-    <div class="temp_feel_like">
-      Feels like....<span id="text_feelslike"></span>
-      <span id="c2">°C</span>
+      <div class="temp_feel_like">
+        Feels like....<span id="text_feelslike"></span>
+        <span id="c2">°C</span>
+      </div>
     </div>
 
     <img id="icon" />
     <p id="text_desc"></p>
+
+    <div class="of">
+      <div id="humidity"></div>
+      <div id="pressure"></div>
+      <div id="windspeed"></div>
+      <div id="sr"></div>
+      <div id="ss"></div>
+    </div>
+    <div class="dandt">
+      <div id="time"></div>
+      <div id="date"></div>
+    </div>
+    <div class="minmax">
+      <div id="mt"></div>
+      <dic id="Mt"></dic>
+    </div>
   </body>
   <script src="fetchData.js"></script>
   <script src="shade.js"></script>
