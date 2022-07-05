@@ -23,13 +23,13 @@ p {
 
 .location {
   display: flex;
-  width: 935px;
+  width: 600%;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 48px gray;
   color: white !important;
   font-weight: bold;
-  margin-top: 37px;
+  margin-top: 42px;
   background-color: #ffffff36;
 }
 
