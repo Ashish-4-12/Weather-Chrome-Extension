@@ -37,7 +37,7 @@ fetch(url)
                 Time = Time.slice(0, 4) + Time.slice(7, 11)
                 //current date
                 var DDate = CT.toLocaleDateString();
-                console.log(DDate)
+                // console.log(DDate)
                 DDate = DDate.replace('/', '|');
                 DDate = DDate.replace('/', '|');
 
@@ -88,15 +88,14 @@ async function get() {
     const respone = await fetch(url);
     const data = await respone.json();
     if (data.weather[0].description == "mist") {
-        document.body.style.backgroundImage = "url('mist8.jpg')";
+        document.body.style.backgroundImage = "url('mist.jpg')";
         document.style.zIndex = "-1";
     }
     else if (data.weather[0].description == "haze") {
-        document.body.style.backgroundImage = "url('haze.jpg')";
-        document.style.zIndex = "-1";
+        document.body.style.backgroundImage = "url('misty.jpg')";
     }
     else if (data.weather[0].description == "clear sky") {
-        document.body.style.backgroundImage = "url('cl.jpg')";
+        document.body.style.backgroundImage = "url('qwerty.jpg')";
         document.style.zIndex = "-1";
     }
     else if (data.weather[0].description == "scattered clouds") {
