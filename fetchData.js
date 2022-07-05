@@ -2,7 +2,7 @@
 const API_key = '907a421ba77e1e9bd25be2203e161ac9'
 
 var api = 'https://api.openweathermap.org/data/2.5/weather?q=';
-var city = 'moscow';
+var city = 'patna';
 var units = '&units=metric&';
 var apikey = 'appid=907a421ba77e1e9bd25be2203e161ac9';
 
@@ -34,7 +34,7 @@ fetch(url)
                 curr_time = curr_time + tz - 19800;
                 var CT = new Date(curr_time * 1000);
                 var Time = CT.toLocaleTimeString();
-                Time = Time.slice(0, 4) + Time.slice(7, 10)
+                Time = Time.slice(0, 4) + Time.slice(7, 11)
                 //current date
                 var DDate = CT.toLocaleDateString();
                 console.log(DDate)
