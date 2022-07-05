@@ -23,7 +23,7 @@ p {
 
 .location {
   display: flex;
-  width: 100%;
+  width: 935px;
   justify-content: center;
   align-items: center;
   box-shadow: 0 0 48px gray;
