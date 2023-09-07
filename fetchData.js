@@ -186,3 +186,11 @@ document.getElementById('btn').addEventListener('click', () => {
     let value = document.getElementById('cityName').value;
     fetchData(value);
 })
+
+let cityName = document.getElementById('cityName');
+cityName.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        let value = document.getElementById('cityName').value;
+        fetchData(value);
+    }
+});
