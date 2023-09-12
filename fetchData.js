@@ -5,10 +5,19 @@ let url = startURL + city + endURL;
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
+const showErrorBox = () => {
+    document.getElementById('ErrorBox').style.display = "block"
+};
+
+document.getElementById('cross').addEventListener('click', () => {
+    document.getElementById('ErrorBox').style.display = "none"
+})
+
 const fetchData = async (city) => {
     let response = await fetch(startURL + city + endURL);
     if (!response.ok) {
-        console.log("Error")
+        console.log("Error");
+        showErrorBox();
     }
     else {
 

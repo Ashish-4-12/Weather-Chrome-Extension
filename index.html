@@ -17,10 +17,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <title>Weather App</title>
 </head>
 
 <body loading="lazy">
+  <div class="ErrorBox" id="ErrorBox" style="display: hidden;">
+    <img src="./src/images/404.jpeg" alt="" width="50vw" class="ErrorBoxImage">
+    <img src="./src/images/delete.png" width="18px" alt="" class="cross" id="cross">
+    <div class="errorMsg">
+      <div>Invalid city name..!!</div>
+      <div> Please enter a valid city</div>
+    </div>
+  </div>
   <div class="des"></div>
   <div class="coords">
     <div id="lat"></div>
